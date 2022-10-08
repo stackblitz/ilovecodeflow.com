@@ -1,0 +1,65 @@
+.message {
+    margin-top:50px;
+    img {
+        position:absolute;
+        left: -60px;
+        bottom:0px;
+        height:45px;
+        width:45px;
+        border-radius:50px;
+        z-index:999;
+    }
+    .comment {
+        padding:5px;
+    }
+    .from {
+        position:absolute;
+        bottom:-25px;
+        font-size:12px;
+        display:block;
+        vertical-align: middle;
+        .emoji {
+            display: inline-block;
+            vertical-align: middle;
+            font-size:20px;
+        }
+        a {
+            text-decoration: none;
+            font-weight:bold;
+            color:#333;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    margin-left:60px;
+    position: relative;
+    padding: 5px 20px;
+    background: #E5E5EA;
+    border-radius: 25px;
+    color: black;
+    float: left;
+    &:before {
+      content: "";
+      position: absolute;
+      z-index: 2;
+      bottom: -2px;
+      left: -7px;
+      height: 20px;
+      border-left: 20px solid #E5E5EA;
+      border-bottom-right-radius: 16px 14px;
+      -webkit-transform: translate(0, -2px);
+    }
+    &:after {
+      content: "";
+      position: absolute;
+      z-index: 3;
+      bottom: -2px;
+      left: 4px;
+      width: 26px;
+      height: 20px;
+      background: white;
+      border-bottom-right-radius: 10px;
+      -webkit-transform: translate(-30px, -2px);
+    }
+  }

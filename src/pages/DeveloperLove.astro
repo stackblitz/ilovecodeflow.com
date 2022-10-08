@@ -1,19 +1,17 @@
 ---
-import Developer from './Developer.astro';
+import GithubUsername from './GithubUsername.astro'
 ---
-<a href="https://github.com/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro">Add your name!</a>
 <!--
     Add your name below! Simply copy+paste the following, fill in, and add to the top of the list. <3
-
-<Developer
-    githubUsername="your-github-name"
-    whyYouLoveCodeflow="Some nice words" />
  -->
+ 
 
-<Developer
-    githubUsername="EricSimons"
-    whyYouLoveCodeflow="Because I can't wait to context switch" />
+<GithubUsername is="EricSimons">
+    This thing is so cool. I love it!
 
-<Developer
-    githubUsername="donmckenna"
-    whyYouLoveCodeflow="I love this thing" />
+    I love that i can see myself typing <a href="#">live</a>.
+</GithubUsername>
+
+<GithubUsername is="sulco">
+    So excited to see this finally shipped!
+</GithubUsername>
