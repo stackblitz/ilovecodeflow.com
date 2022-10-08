@@ -1,9 +1,7 @@
 ---
-import "./GithubUsername.scss"
+import "./LoveNote.scss"
 
-const Slot = 'slot'
-
-const username = Astro.props.is?Astro.props.is : 'octocat';
+const username = Astro.props.githubUsername?Astro.props.githubUsername : 'octocat';
 let emoji = '💜'
 const firstChar = username.toLowerCase().charAt(0);
 if ('abcghijkl'.includes(firstChar)) {
@@ -17,7 +15,7 @@ if ('abcghijkl'.includes(firstChar)) {
 
 
 <div class="message">
-  <div class="comment"><Slot></Slot></div>
+  <div class="comment">{Astro.props.message}</div>
   <img src={`https://github.com/${username}.png`} />
   <div class="from">Published with <span class="emoji">{emoji}</span> by <a href={`https://github.com/${username}`}>{username}</a></div>
 </div>

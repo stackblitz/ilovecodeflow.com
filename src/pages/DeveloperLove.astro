@@ -1,18 +1,17 @@
 ---
-import GithubUsername from './GithubUsername.astro'
+import LoveNote from './LoveNote.astro'
 ---
 <!--
     Add your name below! Simply copy+paste the following, fill in, and add to the top of the list. <3
 
     You can use html (<br/>, <a>, etc) in your comment but no scripts/styles/etc. We won't merge any funny business!
  -->
- 
 
-<GithubUsername is="EricSimons">
-    This thing is so cool. I love it!<br /><br />
-    I love that i can see myself typing <a href="#">live</a>.
-</GithubUsername>
 
-<GithubUsername is="sulco">
-    So excited to see this finally shipped!
-</GithubUsername>
+<LoveNote
+    githubUsername="EricSimons"
+    message="This thing is so cool. I love that i can see myself typing live." />
+
+<LoveNote
+    githubUsername="sulco"
+    message="So excited to see this finally shipped!" />
