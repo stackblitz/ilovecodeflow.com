@@ -1,4 +1,5 @@
 ---
+import "./index.scss"
 import DeveloperLove from './DeveloperLove.astro';
 ---
 
@@ -10,16 +11,30 @@ import DeveloperLove from './DeveloperLove.astro';
 		<meta name="generator" content={Astro.generator} />
 		<title>I ❤️ Codeflow</title>
 		<style>
+			h1 {
+				font-size:50px;
+			}
 			body {
 				font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+			}
+			.flow {
+				-webkit-text-fill-color: #0000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right,#761fac 0,#8a19a9 20%,#d900a5 70%,#d917a3 100%);
+    filter: drop-shadow(0 1px 0 #fff);
+    font-weight: 800;
+	color:#69f5ff;
 			}
 		</style>
 	</head>
 	<body>
-		<h1>I love Codeflow.</h1>
+		<h1>I love <span class="flow">Codeflow</span>.</h1>
 
-		<h2><a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro">Add your name!</a></h2>
+		<a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro" class="btn-push">Add your name!</a>
 
-		<DeveloperLove />
+		<div>
+			<DeveloperLove />
+		</div>
 	</body>
 </html>

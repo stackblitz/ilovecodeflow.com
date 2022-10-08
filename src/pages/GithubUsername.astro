@@ -1,13 +1,22 @@
 ---
 import "./GithubUsername.scss"
 
-const hearts = ['💙','💚','💛','🧡','💜','💕','💞','💘','💝','😍','😻'];
 const username = Astro.props.is?Astro.props.is : 'octocat';
+let emoji = '💜'
+const firstChar = username.toLowerCase().charAt(0);
+if ('abcghijkl'.includes(firstChar)) {
+  emoji = '💙';
+} else if ('mnopqr'.includes(firstChar)) {
+  emoji = '💜';
+} else if ('stubwxyz'.includes(firstChar)) {
+  emoji = '❤️';
+}
 ---
 
 
 <div class="message">
   <div class="comment"><slot /></div>
   <img src={`https://github.com/${username}.png`} />
-  <div class="from">Published with <span class="emoji">{hearts[Math.floor(Math.random()*hearts.length)]}</span> by <a href={`https://github.com/${username}`}>{username}</a></div>
+  <div class="from">Published with <span class="emoji">{emoji}</span> by <a href={`https://github.com/${username}`}>{username}</a></div>
 </div>
+
