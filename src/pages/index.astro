@@ -27,13 +27,26 @@ import DeveloperLove from './DeveloperLove.astro';
     font-weight: 800;
 	color:#69f5ff;
 			}
+			.docs {
+				margin-left: 5px;
+				text-decoration: none;
+				font-weight:600;
+				color:#333;
+				font-size: 13px;
+			}
+			.docs:hover {
+				text-decoration: underline;
+			}
 		</style>
 	</head>
 	<body>
 		<h1>I love <span class="flow">Codeflow</span>.</h1>
-
-		<a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro" class="btn-push">Add your name!</a>
-
+		<div>
+			<a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro" class="btn-push">Add your name!</a>
+			<a class="docs" href="http://developer.stackblitz.com/codeflow">
+				Learn more
+			</a>
+		</div>
 		<div>
 			<DeveloperLove />
 		</div>
