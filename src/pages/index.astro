@@ -4,51 +4,51 @@ import DeveloperLove from './DeveloperLove.astro';
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>I ❤️ Codeflow</title>
-		<style>
-			h1 {
-				font-size:50px;
-			}
-			body {
-				padding:0 20px;
-				font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
-			}
-			.flow {
-				-webkit-text-fill-color: #0000;
-    background-clip: text;
-    -webkit-background-clip: text;
-    background-image: linear-gradient(to right,#761fac 0,#8a19a9 20%,#d900a5 70%,#d917a3 100%);
-    filter: drop-shadow(0 1px 0 #fff);
-    font-weight: 800;
-	color:#69f5ff;
-			}
-			.docs {
-				margin-left: 5px;
-				text-decoration: none;
-				font-weight:600;
-				color:#333;
-				font-size: 13px;
-			}
-			.docs:hover {
-				text-decoration: underline;
-			}
-		</style>
-	</head>
-	<body>
-		<h1>I love <span class="flow">Codeflow</span>.</h1>
-		<div>
-			<a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro" class="btn-push">Add your name!</a>
-			<a class="docs" href="https://developer.stackblitz.com/codeflow/what-is-codeflow" target="_blank" rel="noreferrer noopener">
-				Learn more
-			</a>
-		</div>
-		<div>
-			<DeveloperLove />
-		</div>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>I ❤️ Codeflow</title>
+    <style>
+      h1 {
+        font-size:50px;
+      }
+      body {
+        padding:0 20px;
+        font-family: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+      }
+      .flow {
+        -webkit-text-fill-color: #0000;
+        background-clip: text;
+        -webkit-background-clip: text;
+        background-image: linear-gradient(to right,#761fac 0,#8a19a9 20%,#d900a5 70%,#d917a3 100%);
+        filter: drop-shadow(0 1px 0 #fff);
+        font-weight: 800;
+        color:#69f5ff;
+      }
+      .docs {
+        margin-left: 5px;
+        text-decoration: none;
+        font-weight:600;
+        color:#333;
+        font-size: 13px;
+      }
+      .docs:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>I love <span class="flow">Codeflow</span>.</h1>
+    <div>
+      <a href="https://pr.new/stackblitz/ilovecodeflow.com/edit/main/src/pages/DeveloperLove.astro" class="btn-push">Add your name!</a>
+      <a class="docs" href="https://developer.stackblitz.com/codeflow/what-is-codeflow" target="_blank" rel="noreferrer noopener">
+        Learn more
+      </a>
+    </div>
+    <div>
+      <DeveloperLove />
+    </div>
+  </body>
 </html>

@@ -1,7 +1,7 @@
 ---
 import "./LoveNote.scss"
 
-const username = Astro.props.githubUsername?Astro.props.githubUsername : 'octocat';
+const username = Astro.props.githubUsername ? Astro.props.githubUsername : 'octocat';
 let emoji = '💜'
 const firstChar = username.toLowerCase().charAt(0);
 if ('abcghijkl'.includes(firstChar)) {
@@ -19,4 +19,3 @@ if ('abcghijkl'.includes(firstChar)) {
   <img alt="" crossorigin="anonymous" loading="lazy" src={`https://ghavatars.staticblitz.com/${username}.png?size=90`} />
   <div class="from">Published with <span class="emoji">{emoji}</span> by <a href={`https://github.com/${username}`} target="_blank" rel="noreferrer noopener">{username}</a></div>
 </div>
-
