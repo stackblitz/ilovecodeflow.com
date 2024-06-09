@@ -4,10 +4,10 @@ import "./LoveNote.scss"
 const username = Astro.props.githubUsername ? Astro.props.githubUsername : 'octocat';
 let emoji = '💜'
 const firstChar = username.toLowerCase().charAt(0);
-if ('abcghijkl'.includes(firstChar)) {
-  emoji = '💙';
-} else if ('mnopqr'.includes(firstChar)) {
+if ('abcghijll'.includes(firstChar)) {
   emoji = '💜';
+} else if ('mnopqr'.includes(firstChar)) {
+  emoji = '💙';
 } else if ('stubwxyz'.includes(firstChar)) {
   emoji = '❤️';
 }
